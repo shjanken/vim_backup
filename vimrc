@@ -9,8 +9,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/vundle/ 
 call vundle#rc()
 " alternatively, pass a path where Vundle should install plugins
-"let path = '~/some/path/here'
-"call vundle#rc(path)
+"let path = '~/some/path/here' "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
@@ -42,6 +41,10 @@ Plugin 'kien/ctrlp.vim'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+"vim plugin
+Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled=1
 
 " scripts from http://vim-scripts.org/vim/scripts.html
 " 
@@ -99,4 +102,4 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 "font 
-set guifont=文泉驿等宽微米黑 12
+set guifont=Yahei\ Consolas\ Hybrid\ 12
