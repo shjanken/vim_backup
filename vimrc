@@ -33,6 +33,12 @@ Plugin 'scrooloose/nerdtree'
 map <S-m> ;NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
 
+Plugin 'vim-scripts/nerdtree-ack'
+
+Plugin 'terryma/vim-multiple-cursors'
+
+Plugin 'kien/ctrlp.vim'
+
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -70,7 +76,6 @@ set nobackup
 "set ruler "show the ruler under the space
 set number
 set relativenumber
-"set showcmd
 "set showmode
 set scrolloff=4 " set the comfotable 
 set backspace=indent,eol,start
@@ -85,6 +90,13 @@ set smartindent "look at :help indent
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
-colorscheme elflord
+
+colorscheme desert
 "set list listchars=eol:¬,tab:▸\ ,trail:., "delete it if i dont like this
 "set background=dark
+"
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+"font 
+set guifont=文泉驿等宽微米黑 12
