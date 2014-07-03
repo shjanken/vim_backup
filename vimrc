@@ -1,6 +1,7 @@
 " map key
-nnoremap ; :
-nnoremap : ;
+" keep with other machine's vimrc.
+" nnoremap ; :
+" nnoremap : ;
 
 
 filetype off                  " required
@@ -45,6 +46,13 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 "vim plugin
 Plugin 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled=1
+
+Plugin 'altercation/vim-colors-solarized'
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
 
 " scripts from http://vim-scripts.org/vim/scripts.html
 " 
@@ -94,7 +102,8 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
-colorscheme desert
+"colorscheme desert
+colorscheme solarized
 "set list listchars=eol:¬,tab:▸\ ,trail:., "delete it if i dont like this
 "set background=dark
 "
