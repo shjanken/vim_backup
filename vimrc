@@ -30,7 +30,7 @@ let g:airline_theme="bubblegum"
 Plugin 'terryma/vim-expand-region' "select the word in the () 
 
 Plugin 'scrooloose/nerdtree'
-map <S-m> ;NERDTreeToggle<CR>
+map <S-m> :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
 
 Plugin 'vim-scripts/nerdtree-ack'
