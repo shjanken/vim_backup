@@ -54,6 +54,25 @@ else
   set background=dark
 endif
 
+Plugin 'tpope/vim-surround'
+
+Plugin 'scrooloose/nerdcommenter' " 注释
+
+Plugin 'Shougo/neocomplcache.vim' " 自动完成
+
+let g:acp_enableAtStartup = 0
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplcache_min_syntax_length = 3
+"autoselction
+let g:neocomplcache_enable_auto_select=1
+
+Plugin 'spf13/vim-autoclose'
+
+
 " scripts from http://vim-scripts.org/vim/scripts.html
 " 
 " scripts not on GitHub
